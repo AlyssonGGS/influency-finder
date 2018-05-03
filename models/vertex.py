@@ -1,7 +1,8 @@
 from models.edge import Edge
 
 class Vertex():
-    def __init__(self, value = None):
+    def __init__(self, name = None, value = None):
+        self.name = name
         self.value = value
         self.edges = []
 
