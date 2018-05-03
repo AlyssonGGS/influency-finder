@@ -1,0 +1,679 @@
+1/Sreangsu Acharyya/4
+2/Francois Rioult/7
+3/Jaewoo Kang/25
+4/Shlomo Geva/25
+5/Kotagiri Ramamohanarao/114
+6/Jimeng Sun/27
+7/Songbo Tan/12
+8/Jean-Francois Boulicaut/48
+9/Debbie Richards/50
+10/Irene Ntoutsi/13
+11/Xiuzhen Zhang/23
+12/Xingquan Zhu/49
+13/Yun Chi/23
+14/Joydeep Ghosh/108
+15/Koen Vanhoof/25
+16/Vittorio Castelli/46
+17/Thorsten Joachims/49
+18/C. Lee Giles/215
+19/Padhraic Smyth/89
+20/David Jensen/52
+21/Mihael Ankerst/14
+22/Ron Kohavi/40
+23/George Karypis/80
+24/Ida G. Sprinkhuizen-Kuyper/25
+25/Martin Ester/75
+26/Aleksandar Lazarevic/21
+27/Michael E. Houle/35
+28/James N. K. Liu/22
+29/Cristiana Larizza/18
+30/Yehuda Koren/17
+31/Peter Geczy/4
+32/Xuanhui Wang/18
+33/Sheila Tejada/25
+34/Sergio Bittanti/10
+35/Bhavani Raskutti/22
+36/Boriana L. Milenova/6
+37/Sameer Pradhan/10
+38/Jianchao Han/17
+39/Amar Gupta/30
+40/Chuanjun Li/10
+41/Laura Maruster/11
+42/Hideto Yokoi/18
+43/Hiroyuki Kawano/15
+44/Hannu Toivonen/43
+45/Robert J. Hilderman/19
+46/Mika Klemettinen/25
+47/Michelangelo Ceci/42
+48/Chung-Hong Lee/9
+49/Wen-Yang Lin/23
+50/Richard D. Lawrence/12
+51/Robert Engels/12
+52/Shusaku Tsumoto/42
+53/Ferenc Bodon/5
+54/Xiong Wang/23
+55/Honghua Dai/39
+56/Lei Zou/7
+57/Christoph F. Eick/41
+58/Bettina Berendt/30
+59/Hendrik Blockeel/83
+60/Aleksander Kolcz/17
+61/Jose C. Pinheiro/5
+62/Stephen Bay/4
+63/Brendan Kitts/10
+64/Zhexue Huang/14
+65/Allan Tucker/24
+66/Hasan M. Jamil/23
+67/Bamshad Mobasher/66
+68/Adriano Veloso/30
+69/Mondher Maddouri/10
+70/Xingzhi Sun/11
+71/Yan Huang/71
+72/Sigal Sahar/3
+73/Jason Tsong-Li Wang/79
+74/Pedro Domingos/53
+75/Denny/3
+76/Andrew W. Moore/75
+77/Alexandru Niculescu-Mizil/9
+78/Bjorn Bringmann/8
+79/Kuiyu Chang/12
+80/Jure Leskovec/21
+81/Aristides Gionis/50
+82/Cuiping Li/15
+83/Jun Du/19
+84/Shiwei Tang/63
+85/Ran Wolff/16
+86/Chang-Shing Perng/25
+87/Krzysztof Koperski/19
+88/Tingshao Zhu/12
+89/Bin He/42
+90/Joao Gama/42
+91/Philip Chan/10
+92/Annalisa Appice/39
+93/Donghua Zhu/5
+94/Christian Bohm/43
+95/Ning Zhong/103
+96/Gary M. Weiss/9
+97/Kyuseok Shim/37
+98/Joost N. Kok/119
+99/Zhenyu Chen/16
+100/Ralf Rantzau/17
+101/Geoffrey Holmes/40
+102/Joshua Zhexue Huang/48
+103/Shlomo Argamon/24
+104/Mark Sandler/24
+105/Zhenzhen Kou/6
+106/George Forman/14
+107/Xiaohui Liu/58
+108/Ada Wai-Chee Fu/87
+109/Fengzhan Tian/17
+110/Kun Liu/24
+111/Sunita Sarawagi/40
+112/Ricardo Bezerra de Andrade e Silva/4
+113/Petr Berka/24
+114/Hiroshi Motoda/81
+115/Muneaki Ohshima/11
+116/Xifeng Yan/43
+117/Rohan A. Baxter/17
+118/Christophe G. Giraud-Carrier/28
+119/Blaz Zupan/45
+120/Hui Xiong/56
+121/Tao Tao/37
+122/Sarabjot S. Anand/31
+123/Gregory Piatetsky-Shapiro/35
+124/Aladdin Hafez/9
+125/Pavel Brazdil/36
+126/Mon-Fong Jiang/8
+127/Philip K. Chan/26
+128/Hichem Frigui/17
+129/Xiaolong Zhang/19
+130/Christos Faloutsos/230
+131/Mark-A. Krogel/6
+132/Brian Kulis/6
+133/Ruben H. Zamar/10
+134/Zheng Chen/118
+135/Huan Liu/92
+136/Sofus A. Macskassy/14
+137/Zhihai Wang/19
+138/Charles X. Ling/66
+139/Nada Lavrac/86
+140/Daniel Barbara/61
+141/Hans-Peter Kriegel/169
+142/Adam Kowalczyk/23
+143/Vikas C. Raykar/8
+144/Ross D. King/54
+145/Michael R. Berthold/41
+146/Ata Kaban/19
+147/Geoffrey I. Webb/42
+148/Jin Huang/34
+149/Christopher Meek/48
+150/Hwee-Leng Ong/9
+151/Dao-Qing Dai/12
+152/Roberto J. Bayardo Jr./15
+153/Amanda Clare/12
+154/Geert Wets/35
+155/Kenji Yamanishi/13
+156/Yuchang Lu/24
+157/Hai Wang/37
+158/Albrecht Zimmermann/9
+159/Yue Xu/20
+160/Binyamin Rosenfeld/17
+161/Yukinobu Hamuro/8
+162/Richi Nayak/30
+163/Ying Yang/36
+164/Jaideep Srivastava/120
+165/Paul E. Stolorz/12
+166/Arianna Gallo/5
+167/Li Wei/40
+168/Ting Su/4
+169/Paul S. Bradley/16
+170/Yucel Saygin/27
+171/Jiankui Guo/7
+172/Thomas Hofmann/46
+173/Bernhard Pfahringer/47
+174/Jian Pei/113
+175/Martin Pfeifle/33
+176/Bianca Zadrozny/23
+177/Daniel Boley/31
+178/Sandeep Mane/5
+179/Indrajit Bhattacharya/8
+180/Zhigang Zhang/9
+181/Xin Pei/4
+182/Rudiger Wirth/9
+183/Margaret H. Dunham/37
+184/Xue Li/49
+185/Katsutoshi Yada/17
+186/Keke Chen/6
+187/Boon Toh Low/14
+188/Zhoujun Li/36
+189/Chunyu Yang/7
+190/Stephane Lallich/21
+191/Raymond T. Ng/89
+192/Fabrizio Angiulli/20
+193/Julia Couto/8
+194/Fang Chu/8
+195/Kwok Pan Pang/4
+196/Zhengzheng Xing/2
+197/Luc De Raedt/100
+198/Gautam Pant/12
+199/Tie-Yan Liu/56
+200/Jan M. Zytkow/37
+201/Marcel Holsheimer/8
+202/Juha Vesanto/18
+203/Wei Wang/472
+204/Edward Herskovits/12
+205/Maheshkumar Sabhnani/6
+206/Haixun Wang/83
+207/Vasant Honavar/111
+208/Hisashi Kashima/17
+209/Artur Bykowski/14
+210/Mafruz Zaman Ashrafi/4
+211/Harry Zhang/24
+212/Jorg Sander/33
+213/Deepak K. Agarwal/3
+214/Hila Becker/3
+215/Lisa Singh/13
+216/Roberto J. Bayardo/6
+217/Sergio M. Savaresi/7
+218/Yan Liu/145
+219/Monique Noirhomme-Fraiture/39
+220/Ralf Klinkenberg/14
+221/Olaf Wolkenhauer/21
+222/Constantin F. Aliferis/20
+223/Szymon Jaroszewicz/11
+224/Graham J. Williams/29
+225/Guimei Liu/22
+226/Qiang Yang/209
+227/Dmitry Pavlov/14
+228/Akihiro Nakaya/6
+229/Richard Nock/37
+230/Elaine P. M. de Sousa/6
+231/Latifur Khan/57
+232/Stefan Wrobel/49
+233/Chandrika Kamath/20
+234/Jinyan Li/52
+235/Andrew Tomkins/67
+236/Antti Ukkonen/6
+237/Toon Calders/20
+238/Zhao Yang Dong/16
+239/Hans Chalupsky/22
+240/Hongjun Lu/137
+241/Shenghua Bao/16
+242/Tom Fawcett/14
+243/Greg Ridgeway/11
+244/Tak-Lam Wong/8
+245/Mehmet Koyuturk/15
+246/Chien Chin Chen/6
+247/Hwanjo Yu/22
+248/Hongyuan Zha/65
+249/Luis Torgo/12
+250/Jennifer G. Dy/14
+251/Carlotta Domeniconi/23
+252/David Madigan/43
+253/Shiby Thomas/12
+254/Huidong Jin/30
+255/Aijun An/39
+256/Chris H. Q. Ding/42
+257/Michalis Vazirgiannis/84
+258/Srinivasan Parthasarathy/125
+259/James Bailey/50
+260/Ljupco Todorovski/30
+261/Matthias Schubert/36
+262/Hillol Kargupta/69
+263/Kazumi Saito/35
+264/Vasileios Megalooikonomou/36
+265/Frank Klawonn/49
+266/Shian-Hua Lin/9
+267/Clark Glymour/24
+268/Pabitra Mitra/31
+269/Belle L. Tseng/48
+270/Simeon J. Simoff/49
+271/Ke Wang/132
+272/Beat Wuthrich/12
+273/James Ford/49
+274/Ming-Syan Chen/139
+275/Khaled M. Hammouda/2
+276/Xiaowei Xu/46
+277/James Clifford/33
+278/Shady Shehata/2
+279/Liang Huai Yang/10
+280/Yiming Ma/26
+281/Taneli Mielikainen/19
+282/Claudia Plant/9
+283/Wei Fan/63
+284/Chun-hung Li/13
+285/Arnaud Soulet/11
+286/Hongxing He/25
+287/Kai Ming Ting/23
+288/Yiu-ming Cheung/35
+289/Willi Klosgen/14
+290/Tsau Young Lin/51
+291/Alexandrin Popescul/9
+292/Michinari Momma/5
+293/Murat Kantarcioglu/25
+294/Saso Dzeroski/86
+295/K. P. Unnikrishnan/10
+296/Takashi Washio/60
+297/Rajeev Rastogi/109
+298/Wee Keong Ng/85
+299/Stephan Bloehdorn/11
+300/Christopher Wilson/7
+301/Yong Shi/78
+302/Deepayan Chakrabarti/20
+303/Fuhui Long/16
+304/Markus Hegland/50
+305/Vipin Kumar/143
+306/Pusheng Zhang/14
+307/Peter Christen/31
+308/Tim Oates/60
+309/Terran Lane/24
+310/Xiaoyun Wu/15
+311/Xuehua Shen/14
+312/Tobias Scheffer/40
+313/Teresa Mah/4
+314/Charles Elkan/33
+315/Haesun Park/37
+316/Kari Laasonen/3
+317/Tsuyoshi Ide/8
+318/Dimitris Meretakis/7
+319/Byung-Hoon Park/22
+320/Rosaria Silipo/11
+321/Bruce G. Buchanan/56
+322/Mohammad El-Hajj/11
+323/Bryan W. Scotney/38
+324/Chun Tang/15
+325/Rujiang Bai/4
+326/Antonio Ciampi/5
+327/Hiroshi Mamitsuka/31
+328/David S. Vogel/6
+329/Spiros Papadimitriou/30
+330/Jian Huang/96
+331/Ji-Rong Wen/62
+332/Benyu Zhang/50
+333/Dan A. Simovici/49
+334/Arindam Banerjee/21
+335/Rob Potharst/10
+336/Jieping Ye/40
+337/Helena Ahonen-Myka/6
+338/Fosca Giannotti/59
+339/Ben Kao/77
+340/Martin Znidarsic/3
+341/Rohini K. Srihari/54
+342/Zujia Xu/2
+343/Marco Richeldi/7
+344/Gareth J. Janacek/9
+345/Like Gao/8
+346/David W. Albrecht/17
+347/ZhaoHui Tang/4
+348/Myra Spiliopoulou/68
+349/Olfa Nasraoui/42
+350/Zhongfei Zhang/31
+351/Glenn Fung/40
+352/William DuMouchel/14
+353/Ruoming Jin/34
+354/Nitesh V. Chawla/29
+355/Rosa Meo/18
+356/R. Douglas Martin/4
+357/William A. Wallace/31
+358/Jianyong Wang/48
+359/Jouni K. Seppanen/11
+360/Heng Tao Shen/39
+361/Eyke Hullermeier/32
+362/Antonella Guzzo/25
+363/Einoshin Suzuki/39
+364/Kamal Nigam/21
+365/Nicolas Nicoloyannis/21
+366/Edmond Mesrobian/13
+367/Chi-Hoon Lee/13
+368/Jihoon Yang/34
+369/Niall M. Adams/16
+370/Tzung-Pei Hong/81
+371/Johannes Furnkranz/26
+372/Carsten Lanquillon/4
+373/Vincent Cho/6
+374/Yaping Lin/17
+375/Xiaoyue Wang/8
+376/Jesus Cerquides/24
+377/Inderjit S. Dhillon/42
+378/Giuseppe Manco/38
+379/YongHong Tian/14
+380/Howard J. Hamilton/56
+381/David Wai-Lok Cheung/68
+382/Keith C. C. Chan/46
+383/Kiri Wagstaff/17
+384/Daryl Pregibon/17
+385/Zsolt Tivadar Kardkovacs/8
+386/Johan Himberg/18
+387/Arno Siebes/43
+388/Balaji Padmanabhan/14
+389/Jiuyong Li/25
+390/Yasuhiko Morimoto/11
+391/Johannes Gehrke/98
+392/David Clutter/2
+393/Eibe Frank/46
+394/Tapio Elomaa/23
+395/Giles Hooker/2
+396/Thorsten Meinl/13
+397/Bruno Cremilleux/22
+398/Gabor Melli/8
+399/Jafar Adibi/34
+400/Jochen Hipp/15
+401/Jinze Liu/13
+402/Dianne Cook/30
+403/Ayhan Demiriz/11
+404/Gao Cong/28
+405/Junsong Yuan/12
+406/Pang-Ning Tan/33
+407/George Kollios/55
+408/David W. Cheung/38
+409/Justin Z. Zhan/9
+410/Vladimir Estivill-Castro/45
+411/Patrick Pantel/16
+412/Stefan Ruping/12
+413/Matjaz Kukar/14
+414/Nobuhisa Ueda/18
+415/R. Bharat Rao/34
+416/Chengqi Zhang/113
+417/W. Philip Kegelmeyer/20
+418/Andrew K. C. Wong/41
+419/Arno J. Knobbe/11
+420/John F. Roddick/72
+421/Alfred Ultsch/42
+422/Kristin P. Bennett/34
+423/Steve Poteet/3
+424/Gang Kou/16
+425/Eugene Agichtein/31
+426/Xiaofeng He/21
+427/Djamel A. Zighed/43
+428/Yabo Xu/13
+429/Yuanchen He/2
+430/Mary Shapcott/16
+431/Jia-Yu Pan/12
+432/Claudio Lucchese/13
+433/Zhanhuai Li/21
+434/Hua-Jun Zeng/39
+435/Jan Struyf/25
+436/Changzhou Wang/17
+437/Soumen Chakrabarti/64
+438/Robert Tibshirani/32
+439/Xuerui Wang/17
+440/Tu Bao Ho/66
+441/Qiankun Zhao/16
+442/Salvatore J. Stolfo/96
+443/Rong Jin/77
+444/Slobodan Vucetic/16
+445/Yongjian Fu/31
+446/Ling Feng/55
+447/Micheline Kamber/9
+448/Celine Robardet/20
+449/Kok-Leong Ong/16
+450/Arnold Goodman/2
+451/Takahira Yamaguchi/44
+452/Xiaohua Hu/91
+453/Andreas Hotho/50
+454/Tao Li/177
+455/Paul R. Cohen/133
+456/Shinichi Morishita/35
+457/Fazel Famili/18
+458/Jon M. Kleinberg/78
+459/Henry Tan/5
+460/Ira Cohen/37
+461/Ah-Hwee Tan/38
+462/Tamas Horvath/27
+463/Shian-Shyong Tseng/88
+464/Anne Kao/5
+465/Seung-Taek Park/7
+466/Wen Jin/33
+467/Bin Chen/39
+468/Yongqiao Xiao/7
+469/Jochen Garcke/6
+470/Mehran Sahami/23
+471/Guoliang Li/28
+472/Valery A. Petrushin/14
+473/Ruggero G. Pensa/13
+474/Bin Zhang/114
+475/Mirco Nanni/21
+476/Paula Brito/5
+477/Chris Volinsky/9
+478/Xindong Wu/97
+479/Omid Madani/18
+480/Diane Lambert/16
+481/David J. Hand/37
+482/Alexander Hinneburg/24
+483/Jesus S. Aguilar-Ruiz/63
+484/Yi Xia/8
+485/Raghu Krishnapuram/40
+486/Mahesh V. Joshi/20
+487/Alexander K. Seewald/7
+488/Yang Dai/27
+489/Jun Zhang 0002/7
+490/Akihiro Inokuchi/10
+491/Zhi-Hua Zhou/83
+492/Elizabeth Bradley/19
+493/Juho Rousu/26
+494/Manoranjan Dash/24
+495/Nicolas Meger/4
+496/Peer Kroger/35
+497/Mohammed Javeed Zaki/74
+498/Walter A. Kosters/47
+499/A. J. Feelders/17
+500/Ronen Feldman/60
+501/Ian Davidson/22
+502/Jeffrey Xu Yu/131
+503/Dennis DeCoste/15
+504/Kaustav Das/4
+505/Yunbo Cao/23
+506/Mikhail Bilenko/12
+507/Bi-Ru Dai/9
+508/Khaled Alsabti/3
+509/Marko Salmenkivi/7
+510/A. J. M. M. Weijters/29
+511/Gholamreza Nakhaeizadeh/18
+512/Atulya Velivelli/8
+513/Takashi Okada/13
+514/Michael K. Ng/87
+515/Sheng Ma/55
+516/Chidanand Apte/22
+517/Juzhen Dong/6
+518/Laurence A. F. Park/5
+519/Charu C. Aggarwal/34
+520/Floriana Esposito/102
+521/Frank Hoppner/9
+522/Ivan Bruha/16
+523/Wai Lam/75
+524/Rafael Morales Bueno/19
+525/Matthias Schonlau/9
+526/Rayid Ghani/20
+527/Ling Cheng/5
+528/Robert Gwadera/5
+529/Sam Yuan Sung/47
+530/Mario Boley/2
+531/Hiroshi Tanaka/26
+532/Alexander Tuzhilin/29
+533/Chris Clifton/58
+534/Ricardo Vilalta/36
+535/Chunyi Shi/19
+536/Eamonn J. Keogh/92
+537/Sholom M. Weiss/36
+538/Longbing Cao/41
+539/Lars Schmidt-Thieme/18
+540/Heikki Mannila/134
+541/Clara Pizzuti/19
+542/Bin Gao/20
+543/Jianping Zhang/39
+544/Ulf Brefeld/13
+545/Sanjay Chawla/32
+546/Pavel Dmitriev/5
+547/Foster J. Provost/37
+548/Ramakrishnan Srikant/29
+549/Nathalie Japkowicz/49
+550/Saharon Rosset/30
+551/Martin Scholz/18
+552/Guoping Hu/3
+553/Guido Lindner/5
+554/Junping Zhang/15
+555/Kun-Ta Chuang/13
+556/Sau Dan Lee/13
+557/Jun-ichi Takeuchi/13
+558/Shoji Hirano/14
+559/David Gondek/4
+560/Osmar R. Zaiane/57
+561/Domonkos Tikk/29
+562/Siegfried Nijssen/15
+563/Xiaodan Zhang/27
+564/Naren Ramakrishnan/94
+565/Wei-Min Shen/43
+566/Sergey Brin/12
+567/John F. Elder IV/5
+568/Srujana Merugu/13
+569/Diane J. Cook/87
+570/Mike Gardner/4
+571/Jean-Marc Petit/32
+572/Christian Borgelt/25
+573/Jaakko Hollmen/20
+574/Dawit Yimam Seid/7
+575/Cheong Hee Park/7
+576/Michail Vlachos/37
+577/Ramasamy Uthurusamy/13
+578/Liqin Zhang/5
+579/Jin Soung Yoo/10
+580/Huma Lodhi/12
+581/Melanie Hilario/28
+582/W. Nick Street/22
+583/Antony Unwin/8
+584/Zijian Zheng/19
+585/Suvrit Sra/10
+586/Maurizio Atzori/10
+587/Panayiotis Tsaparas/21
+588/Lawrence B. Holder/61
+589/Qiaozhu Mei/22
+590/Bing Liu/125
+591/Jeremy Besson/13
+592/Bing Leng/8
+593/Vitor R. Carvalho/8
+594/Zoran Obradovic/58
+595/Lee-Feng Chien/55
+596/Mehmet Kaya/10
+597/Yanchang Zhao/15
+598/Lise Getoor/60
+599/George H. John/8
+600/Stephen D. Bay/12
+601/Gabriel Pui Cheong Fung/8
+602/Man Leung Wong/23
+603/Cheng-Ru Lin/8
+604/David W. Patterson/29
+605/Francesco Bonchi/26
+606/Donato Malerba/99
+607/Timothy M. Stough/3
+608/Mehmet Sayal/26
+609/Atsuyoshi Nakamura/22
+610/Ricco Rakotomalala/22
+611/Michael Steinbach/25
+612/George Potamias/18
+613/John Riedl/91
+614/Son N. Nguyen/3
+615/Jiawei Han/295
+616/Ella Bingham/18
+617/Ozden Gur-Ali/2
+618/Vassilios S. Verykios/34
+619/Shenghuo Zhu/26
+620/Arnaud Ragel/3
+621/Andrew McCallum/62
+622/Shichao Zhang/76
+623/Tom M. Mitchell/64
+624/Salvatore Orlando/57
+625/Luigi Pontieri/31
+626/Frederic Flouvat/4
+627/Stefan Kramer/53
+628/Paolo Magni/15
+629/Reda Alhajj/84
+630/Dunja Mladenic/31
+631/Alexandre Termier/9
+632/Xiaodong Lin/23
+633/Michael Dittenbach/25
+634/Robert L. Grossman/73
+635/Se June Hong/25
+636/Bei Yu/17
+637/Wynne Hsu/90
+638/Yuejin Yan/6
+639/Dieter Merkl/48
+640/Edoardo Airoldi/9
+641/Edward Y. Chang/86
+642/Philip S. Yu/316
+643/Ashwani Kumar/6
+644/Usama M. Fayyad/46
+645/Yike Guo/60
+646/Byron Dom/28
+647/Kamal Ali/11
+648/Jinbo Bi/31
+649/Sugato Basu/17
+650/Olivier Y. de Vel/21
+651/Mohamed Medhat Gaber/19
+652/Mohamed S. Kamel/67
+653/Paola Sebastiani/21
+654/Deyi Li/25
+655/Bart Goethals/26
+656/Aixin Sun/38
+657/Pedro de Almeida/2
+658/Igor Nai Fovino/6
+659/Alexandros Kalousis/14
+660/Terence Critchlow/37
+661/Florent Masseglia/17
+662/Josef Tkadlec/2
+663/Xintao Wu/28
+664/I-Jen Chiang/11
+665/Deepak Agarwal/14
+666/Song Lin/14
+667/Mohamed G. Elfeky/12
+668/Reuven Kashi/4
+669/Inna Kolyshkina/3
+670/Giuseppe De Nicolao/9
+671/Shuigeng Zhou/62
+672/Miroslav Kubat/35
+673/Fabian Morchen/9
+674/Yonatan Aumann/49
+675/Raymond Chi-Wing Wong/16
+676/Yoshitsugu Kakemoto/6
+677/Dimitrios Gunopulos/113
+678/Chao Liu/36
+679/Krishnamoorthy Sivakumar/20
