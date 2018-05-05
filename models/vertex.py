@@ -17,3 +17,4 @@ class Vertex():
         for edge in self.edges:
             if(edge.get_destiny_value()) == vert_id:
                 return edge.destiny
+        return None
