@@ -1,6 +1,6 @@
 from  models.vertex import Vertex
 
-file_dir = "/home/alysson/python/influency_finder/files/"
+file_dir = "files/"
 
 def generate_vertices_list(file_name, separator = "/"):
     vertices = []
@@ -36,7 +36,6 @@ def create_edges(info, vertices):
 
 def get_maximum_vertice(vertices):
     return sorted(vertices, key = lambda vertex: vertex.value, reverse = True)[0]
-    
 
 def get_first_node():
     vertices = generate_vertices_list("graph_vertex.net")
