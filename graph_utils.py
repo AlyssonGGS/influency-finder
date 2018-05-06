@@ -8,7 +8,7 @@ def generate_vertices_list(file_name, separator = "/"):
         line = arq.readline()
         while line:
             info = line.replace("\n","").split(separator)
-            vertex = Vertex(info[1], int(info[2]))
+            vertex = Vertex(int(info[0]), info[1], int(info[2]))
             vertices.append(vertex)
             line = arq.readline()
     return vertices
@@ -42,4 +42,3 @@ def get_first_node():
     add_edges_to_vertices("graph_edge.net",vertices)
     return get_maximum_vertice(vertices)
 
-print(get_first_node().name)
