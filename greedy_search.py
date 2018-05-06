@@ -74,7 +74,7 @@ def heuristic_1(node):
 def heuristic_2(node):
     return node.value
 
-
-[print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_1)]
-print("------")
-[print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_2)]
+# #UNCOMMENT TO TEST HEURISTIC SEARCH
+# [print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_1)]
+# print("------")
+# [print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_2)]
