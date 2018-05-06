@@ -63,7 +63,7 @@ def create_edges(info, vertices):
     #cria uma aresta do primeiro coautor para o segundo
     vertices[vertex_id_first - 1].add_edge(vertices[vertex_id_second - 1], colaborations)
     #cria uma aresta do segundo coautor para o primerio
-    vertices[vertex_id_second - 1].add_edge(vertices[vertex_id_first - 1], colaborations)
+    #vertices[vertex_id_second - 1].add_edge(vertices[vertex_id_first - 1], colaborations)
 
 def get_maximum_vertex(vertices):
     return sorted(vertices, key = lambda vertex: vertex.value, reverse = True)[0]
