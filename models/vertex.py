@@ -18,9 +18,4 @@ class Vertex():
         for edge in self.edges:
             if(edge.get_destiny_value()) == vert_id:
                 return edge.destiny
-<<<<<<< HEAD
         return None
-=======
-
-
->>>>>>> 1f31c4dc6693b48ae8408f506841ea36bad04583
