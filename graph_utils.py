@@ -1,13 +1,37 @@
 from  models.vertex import Vertex
 from pathlib import Path
 import os
-file_dir = "/home/alysson/python/influency_finder/files/"
-
+file_dir = "files/"
 class Graph():
     #Legibilidade
     def to_dict(self, vertex_file_name, edge_file_name):
         return convert_to_dict(vertex_file_name, edge_file_name)
 
+
+def build_graph(vertex_file_name, edges_file_name):
+    vertices = generate_vertices_list(vertex_file_name)
+    vertices = add_edges_to_vertices(edges_file_name, vertices)
+    return vertices
+
+#Converte um grafo para dicionário do tipo {string: string}
+def convert_to_dict(vertex_file_name, edge_file_name):
+    graph = {}
+    vertices = generate_vertices_list(vertex_file_name)
+    vertices = add_edges_to_vertices(edge_file_name, vertices)
+    for vertex in vertices:
+        s = set()
+        for edges in vertex.edges:
+            s.add(edges.destiny.id.__str__())
+        graph[vertex.id] = s
+    return graph
+
+def pretty_print(graph = Graph()):
+    for i in graph:
+        print("Vertex : ")
+        print(i)
+        print("Edges")
+        for j in i:
+            print(j)
 
 def generate_vertices_list(file_name, separator = "/"):
     vertices = []
@@ -15,7 +39,7 @@ def generate_vertices_list(file_name, separator = "/"):
         line = arq.readline()
         while line:
             info = line.replace("\n","").split(separator)
-            vertex = Vertex(int(info[0]), info[1], int(info[2]))
+            vertex = Vertex(info[0], info[1], int(info[2]))
             vertices.append(vertex)
             line = arq.readline()
     return vertices
@@ -49,18 +73,6 @@ def get_first_node():
     add_edges_to_vertices("graph_edge.net",vertices)
     return get_maximum_vertex(vertices)
 
-#Converte um grafo para dicionário do tipo {string: string}
-def convert_to_dict(vertex_file_name, edge_file_name):
-    graph = {}
-    vertices = generate_vertices_list(vertex_file_name)
-    vertices = add_edges_to_vertices(edge_file_name, vertices)
-    for vertex in vertices:
-        s = set()
-        for edges in vertex.edges:
-            s.add(edges.destiny.id.__str__())
-        graph[vertex.id] = s
-    return graph
-
 # Depth-First Search ou Busca em profundidade, usando o método da pilha.
 # A partir de um grafo no formato de dicionário '{string: string}',
 # retorna todos os vértices alcançáveis a partir desse vértice
@@ -85,17 +97,8 @@ def dfs(graph, begin):
 
 
 # UNCOMMENT BELOW TO TEST GRAPH-TO-DICT AND DEPTH-FIRST SEARCH
-
+#
 # graph = Graph().to_dict("graph_vertex.net","graph_edge.net")
 # pretty_print(graph)
 # result = dfs(graph,'1')
 # print(result)
-
-
-
-# Não sei se será necessário, mas precisaria de uma função
-# para achar o caminho entre dois nós
-# Função que soma o custo total entre dois nós.
-# TODO def total_cost(graph,path):
-
-
