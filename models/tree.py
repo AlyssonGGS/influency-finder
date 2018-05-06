@@ -12,6 +12,15 @@ class Tree():
         self.children = []    #Uma lista contendo os filhos deste nó
         self.visited = False  #Flag utilizada na função "dfs_tree()"
 
+    def set_node_by_vertex(self,vertex, parent):
+        self.id = vertex.id          #O id contido nos arquivos
+        self.name = vertex.name      #O nome do pesquisador escreveu o artigo
+        self.value = vertex.value    #O valor da heurística para esse nó
+        self.hSum = 0         #A soma das heurísticas da raiz até esse nó
+        self.parent = parent  #O nó pai deste nó
+        self.children = []    #Uma lista contendo os filhos deste nó
+        self.visited = False  #Flag utilizada na função "dfs_tree()"        
+        
     def find_child(self, id):
         for node in self.children:
             if (node.id == id):
@@ -110,34 +119,3 @@ def dfs_tree(tree, id):
     clear_tree(tree)
     node = search(tree,id)
     return node
-
-#Testa para ver se tá tudo funcionando bunitinho :3
-tree = Tree(1)
-i = 2
-while i < 5:
-    child = Tree(i)
-    tree.children.append(child)
-    i += 1
-
-tree.children[0].children.append(Tree(5))
-tree.children[0].children.append(Tree(6))
-
-tree.children[1].children.append(Tree(7))
-tree.children[1].children.append(Tree(8))
-tree.children[1].children.append(Tree(9))
-
-
-tree.children[2].children.append(Tree(10))
-
-result = dfs_tree(tree,12)
-print(result.get_id()) if result is not(None) else print("Não achou")
-
-result = dfs_tree(tree,10)
-print(result.get_id()) if result is not(None) else print("Não achou")
-
-result = dfs_tree(tree,1)
-print(result.get_id()) if result is not(None) else print("Não achou")
-
-tree = None
-result = dfs_tree(tree,1)
-print(result.get_id()) if result is not(None) else print("Não achou")
