@@ -8,6 +8,33 @@ class Graph():
     def to_dict(self, vertex_file_name, edge_file_name):
         return convert_to_dict(vertex_file_name, edge_file_name)
 
+def generate_standard_archives(file_name):
+    edges = open(file_dir+"graph_edge1.net", "w")       #arquivo onde serao guardados as linhas
+    vertex = open(file_dir+"graph_vertex1.net", "w")    #arquvo onde serao guardados os vertices
+    arq = open(file_dir + file_name, "r")      #arquivo de leitura
+
+    arq.readline()                             #primeira leitura: uma linha que indica a leitura de vertices
+
+    while True:
+        itens = arq.readline().split("\"")        #separa a linha em 3 itens : numero, nome e qtd de artigos
+        if(len(itens) == 1):            #para na leitura que indica edges
+            break
+        else:
+            vertex.write(itens[0].replace(" ", "/")+itens[1]+itens[2].replace(" ", "/")) #escreve cada separando com o "/
+    while True:
+        line = line = arq.readline()
+        itens = line.split(" ")
+        if (len(itens) == 1):           #para na leitura que indica triangle
+            break
+        else:
+            edges.write(line.replace(" ", "/"))
+    arq.close()
+    vertex.close()
+    edges.close()
+
+
+
+
 
 def generate_vertices_list(file_name, separator = "/"):
     vertices = []
@@ -84,6 +111,7 @@ def dfs(graph, begin):
     return visited
 
 
+
 # UNCOMMENT BELOW TO TEST GRAPH-TO-DICT AND DEPTH-FIRST SEARCH
 
 # graph = Graph().to_dict("graph_vertex.net","graph_edge.net")
@@ -99,3 +127,4 @@ def dfs(graph, begin):
 # TODO def total_cost(graph,path):
 
 
+generate_standard_archives("graph-T107_sub1.net")
