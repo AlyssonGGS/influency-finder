@@ -2,39 +2,36 @@ from  models.vertex import Vertex
 from pathlib import Path
 import os
 file_dir = "files/"
-
 class Graph():
     #Legibilidade
     def to_dict(self, vertex_file_name, edge_file_name):
         return convert_to_dict(vertex_file_name, edge_file_name)
 
-def generate_standard_archives(file_name):
-    edges = open(file_dir+"graph_edge1.net", "w")       #arquivo onde serao guardados as linhas
-    vertex = open(file_dir+"graph_vertex1.net", "w")    #arquvo onde serao guardados os vertices
-    arq = open(file_dir + file_name, "r")      #arquivo de leitura
 
-    arq.readline()                             #primeira leitura: uma linha que indica a leitura de vertices
+def build_graph(vertex_file_name, edges_file_name):
+    vertices = generate_vertices_list(vertex_file_name)
+    vertices = add_edges_to_vertices(edges_file_name, vertices)
+    return vertices
 
-    while True:
-        itens = arq.readline().split("\"")        #separa a linha em 3 itens : numero, nome e qtd de artigos
-        if(len(itens) == 1):            #para na leitura que indica edges
-            break
-        else:
-            vertex.write(itens[0].replace(" ", "/")+itens[1]+itens[2].replace(" ", "/")) #escreve cada separando com o "/
-    while True:
-        line = line = arq.readline()
-        itens = line.split(" ")
-        if (len(itens) == 1):           #para na leitura que indica triangle
-            break
-        else:
-            edges.write(line.replace(" ", "/"))
-    arq.close()
-    vertex.close()
-    edges.close()
+#Converte um grafo para dicionário do tipo {string: string}
+def convert_to_dict(vertex_file_name, edge_file_name):
+    graph = {}
+    vertices = generate_vertices_list(vertex_file_name)
+    vertices = add_edges_to_vertices(edge_file_name, vertices)
+    for vertex in vertices:
+        s = set()
+        for edges in vertex.edges:
+            s.add(edges.destiny.id.__str__())
+        graph[vertex.id] = s
+    return graph
 
-
-
-
+def pretty_print(graph = Graph()):
+    for i in graph:
+        print("Vertex : ")
+        print(i)
+        print("Edges")
+        for j in graph[i]:
+            print(j)
 
 def generate_vertices_list(file_name, separator = "/"):
     vertices = []
@@ -42,7 +39,7 @@ def generate_vertices_list(file_name, separator = "/"):
         line = arq.readline()
         while line:
             info = line.replace("\n","").split(separator)
-            vertex = Vertex(int(info[0]), info[1], int(info[2]))
+            vertex = Vertex(info[0], info[1], int(info[2]))
             vertices.append(vertex)
             line = arq.readline()
     return vertices
@@ -66,27 +63,15 @@ def create_edges(info, vertices):
     #cria uma aresta do primeiro coautor para o segundo
     vertices[vertex_id_first - 1].add_edge(vertices[vertex_id_second - 1], colaborations)
     #cria uma aresta do segundo coautor para o primerio
-    vertices[vertex_id_second - 1].add_edge(vertices[vertex_id_first - 1], colaborations)
+    #vertices[vertex_id_second - 1].add_edge(vertices[vertex_id_first - 1], colaborations)
 
-def get_maximum_vertice(vertices):
+def get_maximum_vertex(vertices):
     return sorted(vertices, key = lambda vertex: vertex.value, reverse = True)[0]
 
 def get_first_node():
     vertices = generate_vertices_list("graph_vertex.net")
     add_edges_to_vertices("graph_edge.net",vertices)
-    return "print"
-
-#Converte um grafo para dicionário do tipo {string: string}
-def convert_to_dict(vertex_file_name, edge_file_name):
-    graph = {}
-    vertices = generate_vertices_list(vertex_file_name)
-    vertices = add_edges_to_vertices(edge_file_name, vertices)
-    for vertex in vertices:
-        s = set()
-        for edges in vertex.edges:
-            s.add(edges.destiny.id.__str__())
-        graph[vertex.id] = s
-    return graph
+    return get_maximum_vertex(vertices)
 
 # Depth-First Search ou Busca em profundidade, usando o método da pilha.
 # A partir de um grafo no formato de dicionário '{string: string}',
@@ -111,20 +96,9 @@ def dfs(graph, begin):
     return visited
 
 
-
 # UNCOMMENT BELOW TO TEST GRAPH-TO-DICT AND DEPTH-FIRST SEARCH
 
 # graph = Graph().to_dict("graph_vertex.net","graph_edge.net")
 # pretty_print(graph)
-# result = dfs(graph,'1')
+# result = dfs(graph,'679')
 # print(result)
-
-
-
-# Não sei se será necessário, mas precisaria de uma função
-# para achar o caminho entre dois nós
-# Função que soma o custo total entre dois nós.
-# TODO def total_cost(graph,path):
-
-
-generate_standard_archives("graph-T107_sub1.net")

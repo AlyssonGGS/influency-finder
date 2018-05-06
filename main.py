@@ -28,11 +28,20 @@ def software_engineering():
             print(result)
         if(menu == 3):
             k = eval(input("Digite k (quantidade de usuários mais influentes): "))
-            [print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(k), heuristic_1)]
+            tree = search(Problem(k), heuristic_1)
+            for node in tree:
+                print(str(node.name) + " " + str(node.value))
+                DFS = dfs(dict_graph, str(node.id))
+                print("DFS de " + node.name + ", tamanho " + str(len(DFS)) + ": ")
+                print(DFS)
         if(menu == 4):
             k = eval(input("Digite k (quantidade de usuários mais influentes): "))
-            [print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(k), heuristic_2)]
-
+            tree = search(Problem(k), heuristic_2)
+            for node in tree:
+                print(str(node.name) + " " + str(node.value))
+                DFS = dfs(dict_graph, str(node.id))
+                print("DFS de " + node.name + ", tamanho " + str(len(DFS)) + ": ")
+                print(DFS)
         if(menu == -1):
             time.sleep(0.5)
             print("Saindo do programa!")
