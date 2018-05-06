@@ -11,15 +11,17 @@ class Tree():
         self.parent = parent  #O nó pai deste nó
         self.children = []    #Uma lista contendo os filhos deste nó
         self.visited = False  #Flag utilizada na função "dfs_tree()"
+        self.vertex = None    #Referencia para o vertice que originou a arvore
 
-    def set_node_by_vertex(self,vertex, parent):
+    def set_tree_by_vertex(self, vertex, parent):
         self.id = vertex.id          #O id contido nos arquivos
         self.name = vertex.name      #O nome do pesquisador escreveu o artigo
         self.value = vertex.value    #O valor da heurística para esse nó
         self.hSum = 0         #A soma das heurísticas da raiz até esse nó
         self.parent = parent  #O nó pai deste nó
         self.children = []    #Uma lista contendo os filhos deste nó
-        self.visited = False  #Flag utilizada na função "dfs_tree()"        
+        self.visited = False  #Flag utilizada na função "dfs_tree()"  
+        self.vertex = vertex      
         
     def find_child(self, id):
         for node in self.children:
@@ -41,7 +43,14 @@ class Tree():
         else:
             print("Nó já existe na árvore")
             return None
-
+    
+    def add_child_by_vertex(self, vertex, heuristic_value):
+        child = Tree(0)
+        child.set_tree_by_vertex(vertex, self)
+        child.value = heuristic_value
+        child.hSum = self.hSum + heuristic_value
+        self.children.append(child)
+        return child
 
     #Remove um filho da árvore a partir do seu id.
     #Caso deseje remover um nó da árvore chame este método
