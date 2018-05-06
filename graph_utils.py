@@ -1,7 +1,7 @@
 from  models.vertex import Vertex
 from pathlib import Path
 import os
-file_dir = "files/"
+file_dir = "/home/alysson/python/influency_finder/files/"
 
 class Graph():
     #Legibilidade
@@ -41,13 +41,13 @@ def create_edges(info, vertices):
     #cria uma aresta do segundo coautor para o primerio
     vertices[vertex_id_second - 1].add_edge(vertices[vertex_id_first - 1], colaborations)
 
-def get_maximum_vertice(vertices):
+def get_maximum_vertex(vertices):
     return sorted(vertices, key = lambda vertex: vertex.value, reverse = True)[0]
 
 def get_first_node():
     vertices = generate_vertices_list("graph_vertex.net")
     add_edges_to_vertices("graph_edge.net",vertices)
-    return "print"
+    return get_maximum_vertex(vertices)
 
 #Converte um grafo para dicionário do tipo {string: string}
 def convert_to_dict(vertex_file_name, edge_file_name):
