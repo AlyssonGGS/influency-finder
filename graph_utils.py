@@ -1,6 +1,13 @@
 from  models.vertex import Vertex
-
+from pathlib import Path
+import os
 file_dir = "files/"
+
+class Graph():
+    #Legibilidade
+    def to_dict(self, vertex_file_name, edge_file_name):
+        return convert_to_dict(vertex_file_name, edge_file_name)
+
 
 def generate_vertices_list(file_name, separator = "/"):
     vertices = []
@@ -8,7 +15,7 @@ def generate_vertices_list(file_name, separator = "/"):
         line = arq.readline()
         while line:
             info = line.replace("\n","").split(separator)
-            vertex = Vertex(info[1], int(info[2]))
+            vertex = Vertex(info[0],info[1], int(info[2]))
             vertices.append(vertex)
             line = arq.readline()
     return vertices
@@ -40,6 +47,55 @@ def get_maximum_vertice(vertices):
 def get_first_node():
     vertices = generate_vertices_list("graph_vertex.net")
     add_edges_to_vertices("graph_edge.net",vertices)
-    return get_maximum_vertice(vertices)
+    return "print"
 
-print(get_first_node().name)
+#Converte um grafo para dicionário do tipo {string: string}
+def convert_to_dict(vertex_file_name, edge_file_name):
+    graph = {}
+    vertices = generate_vertices_list(vertex_file_name)
+    vertices = add_edges_to_vertices(edge_file_name, vertices)
+    for vertex in vertices:
+        s = set()
+        for edges in vertex.edges:
+            s.add(edges.destiny.id.__str__())
+        graph[vertex.id] = s
+    return graph
+
+# Depth-First Search ou Busca em profundidade, usando o método da pilha.
+# A partir de um grafo no formato de dicionário '{string: string}',
+# retorna todos os vértices alcançáveis a partir desse vértice
+# em uma estrutura set/conjunto.
+
+def dfs(graph, begin):
+    # Começo da pilha: nó que se deseja começar a busca.
+    stack = [begin]
+
+    # Conjunto de nós visitados
+    visited = set()
+
+    while stack:
+        vertex = stack.pop(0)
+        if vertex not in visited:
+            # Se ainda não visitou esse nó, adiciona à lista de visitados
+            visited.add(vertex)
+            # Prepara a pilha para explorar os nós ligados ao recém-visitado
+            stack.extend(graph[vertex] - visited)
+            # print(stack)
+    return visited
+
+
+# UNCOMMENT BELOW TO TEST GRAPH-TO-DICT AND DEPTH-FIRST SEARCH
+
+# graph = Graph().to_dict("graph_vertex.net","graph_edge.net")
+# pretty_print(graph)
+# result = dfs(graph,'1')
+# print(result)
+
+
+
+# Não sei se será necessário, mas precisaria de uma função
+# para achar o caminho entre dois nós
+# Função que soma o custo total entre dois nós.
+# TODO def total_cost(graph,path):
+
+
