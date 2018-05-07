@@ -31,9 +31,7 @@ class Problem:
         return highest                        
   
 def search(problem, heuristic):
-    tree = build_initial_tree(get_first_node(), heuristic)
-
-    frontier = [tree]
+    frontier = [build_initial_tree(get_first_node(), heuristic)]
     explored = set()
 
     while True:
@@ -46,8 +44,8 @@ def search(problem, heuristic):
             return sorted(problem.solution, key=lambda tree: tree.value, reverse=True)
         
         build_childs(tree, heuristic)
-        print(tree.id)
         explored.add(tree.id)
+
         destiny = tree.children[0]
         for child in tree.children[1:]:
             if child.value > destiny.value and not child.id in explored:
