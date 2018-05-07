@@ -32,7 +32,6 @@ class Problem:
   
 def search(problem, heuristic):
     tree = build_initial_tree(get_first_node(), heuristic)
-    build_childs(tree, heuristic)
 
     frontier = [tree]
     explored = set()
@@ -40,18 +39,21 @@ def search(problem, heuristic):
     while True:
         if not frontier:
             raise Exception("Fronteira vazia!")
+        
         tree = frontier.pop()
+        
         if problem.goal(tree):
             return sorted(problem.solution, key=lambda tree: tree.value, reverse=True)
+        
+        build_childs(tree, heuristic)
+        print(tree.id)
         explored.add(tree.id)
-
-        for child in tree.children:
-            if not (child.id in explored or child in frontier):
-                build_childs(child, heuristic)
-                frontier.append(child)
-            elif frontier[len(frontier) - 1].value < child.value:
-                frontier.remove(frontier[len(frontier) - 1])
-                frontier.append(child)
+        destiny = tree.children[0]
+        for child in tree.children[1:]:
+            if child.value > destiny.value and not child.id in explored:
+                destiny = child
+        frontier.append(destiny)
+            
 
 def build_initial_tree(node, heuristic):
     tree = Tree(0)
@@ -74,7 +76,7 @@ def heuristic_1(node):
 def heuristic_2(node):
     return node.value
 
-# #UNCOMMENT TO TEST HEURISTIC SEARCH
-# [print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_1)]
-# print("------")
-# [print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_2)]
+#UNCOMMENT TO TEST HEURISTIC SEARCH
+[print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_1)]
+print("------")
+[print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_2)]
