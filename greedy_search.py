@@ -31,6 +31,9 @@ class Problem:
 
     def child_node(self, node, explored):
         (id, highest) = self.__get_first_no_explored_child(node, explored)
+        if highest is None:
+            return None
+
         #procura pelo maior filho
         for child in node.children[id:]:
             if highest.value < child.value and not child.id in explored:
@@ -43,6 +46,7 @@ class Problem:
             if not child.id in explored:
                 return (i, child)
             i = i + 1
+        return (0, None)
         
   
 def search(problem, heuristic):
@@ -75,7 +79,8 @@ def search(problem, heuristic):
         destiny = problem.child_node(tree, explored)
 
         #adiciona este nó na lista analisada
-        frontier.append(destiny)
+        if destiny is not None:
+            frontier.append(destiny)
             
 
 def build_initial_tree(node, heuristic):
