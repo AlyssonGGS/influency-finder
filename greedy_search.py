@@ -31,6 +31,8 @@ class Problem:
 
     def child_node(self, node, explored):
         (id, highest) = self.__get_first_no_explored_child(node, explored)
+
+        #Caso os nos proximos ja tenham sido explorados, retorna None
         if highest is None:
             return None
 
@@ -95,6 +97,7 @@ def build_childs(tree, heuristc):
     return tree
 
 #h1
+#Numero de papers com outros coautores
 def heuristic_1(node):
     sum = 0
     for e in node.edges:
@@ -102,10 +105,17 @@ def heuristic_1(node):
     return sum
 
 #h2
+#Numero de papers escritos
 def heuristic_2(node):
     return node.value
 
 #UNCOMMENT TO TEST HEURISTIC SEARCH
-[print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_1)]
-print("------")
-[print(str(tree.name) + " " + str(tree.value)) for tree in search(Problem(20), heuristic_2)]
+k = int(input("Insira o numero de usuarios desejado: "))
+
+print("\nHeuristica 1\nNome | Valor da Heuristica")
+[print(str(tree.name) + " | " + str(tree.value)) for tree in search(Problem(k), heuristic_1)]
+
+print("\n------")
+
+print("\nHeuristica 2\nNome | Valor da Heuristica")
+[print(str(tree.name) + " | " + str(tree.value)) for tree in search(Problem(k), heuristic_2)]
