@@ -1,6 +1,9 @@
 # influency-finder
 Primeira tarefa de IA 2018.1
 
+#OBS.:
+## Todos os scripts devem ser executados com python3
+### Exemplo> python3 format.py
 #Utilização
 -Extraia o arquivo compactado para uma pasta.
 

@@ -109,13 +109,13 @@ def heuristic_1(node):
 def heuristic_2(node):
     return node.value
 
-#UNCOMMENT TO TEST HEURISTIC SEARCH
-k = int(input("Insira o numero de usuarios desejado: "))
+# #UNCOMMENT TO TEST HEURISTIC SEARCH
+# k = int(input("Insira o numero de usuarios desejado: "))
 
-print("\nHeuristica 1\nNome | Valor da Heuristica")
-[print(str(tree.name) + " | " + str(tree.value)) for tree in search(Problem(k), heuristic_1)]
+# print("\nHeuristica 1\nNome | Valor da Heuristica")
+# [print(str(tree.name) + " | " + str(tree.value)) for tree in search(Problem(k), heuristic_1)]
 
-print("\n------")
+# print("\n------")
 
-print("\nHeuristica 2\nNome | Valor da Heuristica")
-[print(str(tree.name) + " | " + str(tree.value)) for tree in search(Problem(k), heuristic_2)]
+# print("\nHeuristica 2\nNome | Valor da Heuristica")
+# [print(str(tree.name) + " | " + str(tree.value)) for tree in search(Problem(k), heuristic_2)]
