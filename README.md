@@ -1,10 +1,10 @@
 # influency-finder
 Primeira tarefa de IA 2018.1
 
-#OBS.:
+# OBS.:
 ## Todos os scripts devem ser executados com python3
 ### Exemplo> python3 format.py
-#Utilização
+# Utilização
 -Extraia o arquivo compactado para uma pasta.
 
 -Escolha o dataset a ser usado da pasta files.
@@ -13,6 +13,6 @@ Primeira tarefa de IA 2018.1
 
 -Execute o arquivo "main.py".
 
-#Código fonte
+# Código fonte
 -Github:
     https://github.com/AlyssonGGS/influency-finder
